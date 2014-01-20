@@ -32,6 +32,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 #include <SDL.h>
 #include <SDL_image.h>
@@ -41,7 +42,7 @@
 #include "config.h"
 #endif
 
-#define FPS (1000/24)
+#define FPS (1000/18)
 
 #define RANDOM(x) ((int) (x ## .0 * rand () / (RAND_MAX + 1.0)))
 
@@ -129,7 +130,6 @@ enum {
 	IMG_SEG2_23,
 	IMG_SEG2_24,
 	IMG_SEG2_25,
-	IMG_SEG2_26,
 	
 	IMG_SEG3_1,
 	IMG_SEG3_2,
@@ -156,7 +156,6 @@ enum {
 	IMG_SEG3_23,
 	IMG_SEG3_24,
 	IMG_SEG3_25,
-	IMG_SEG3_26,
 	
 	IMG_SEG4_1,
 	IMG_SEG4_2,
@@ -195,6 +194,17 @@ enum {
 	IMG_SEG4_35,
 	IMG_SEG4_36,
 	IMG_SEG4_37,
+	IMG_SEG4_38,
+	IMG_SEG4_39,
+	IMG_SEG4_40,
+	IMG_SEG4_41,
+	IMG_SEG4_42,
+	IMG_SEG4_43,
+	IMG_SEG4_44,
+	IMG_SEG4_45,
+	IMG_SEG4_46,
+	IMG_SEG4_47,
+	IMG_SEG4_48,
 	
 	IMG_SEG5_1,
 	IMG_SEG5_2,
@@ -233,6 +243,45 @@ enum {
 	IMG_SEG5_35,
 	IMG_SEG5_36,
 	IMG_SEG5_37,
+	IMG_SEG5_38,
+	IMG_SEG5_39,
+	IMG_SEG5_40,
+	IMG_SEG5_41,
+	IMG_SEG5_42,
+	IMG_SEG5_43,
+	IMG_SEG5_44,
+	IMG_SEG5_45,
+	IMG_SEG5_46,
+	IMG_SEG5_47,
+	IMG_SEG5_48,
+	
+	IMG_SEG6_1,
+	IMG_SEG6_2,
+	IMG_SEG6_3,
+	IMG_SEG6_4,
+	IMG_SEG6_5,
+	IMG_SEG6_6,
+	IMG_SEG6_7,
+	IMG_SEG6_8,
+	IMG_SEG6_9,
+	IMG_SEG6_10,
+	IMG_SEG6_11,
+	IMG_SEG6_12,
+	IMG_SEG6_13,
+	IMG_SEG6_14,
+	IMG_SEG6_15,
+	IMG_SEG6_16,
+	IMG_SEG6_17,
+	IMG_SEG6_18,
+	IMG_SEG6_19,
+	IMG_SEG6_20,
+	IMG_SEG6_21,
+	IMG_SEG6_22,
+	IMG_SEG6_23,
+	IMG_SEG6_24,
+	IMG_SEG6_25,
+	IMG_SEG6_26,
+	IMG_SEG6_27,
 	
 	NUM_IMAGES
 };
@@ -311,7 +360,6 @@ const char *images_names[NUM_IMAGES] = {
 	GAMEDATA_DIR "images/Fondo-seg-2_0023.png",
 	GAMEDATA_DIR "images/Fondo-seg-2_0024.png",
 	GAMEDATA_DIR "images/Fondo-seg-2_0025.png",
-	GAMEDATA_DIR "images/Fondo-seg-2_0026.png",
 	GAMEDATA_DIR "images/Fondo-seg-3_0001.png",
 	GAMEDATA_DIR "images/Fondo-seg-3_0002.png",
 	GAMEDATA_DIR "images/Fondo-seg-3_0003.png",
@@ -337,7 +385,6 @@ const char *images_names[NUM_IMAGES] = {
 	GAMEDATA_DIR "images/Fondo-seg-3_0023.png",
 	GAMEDATA_DIR "images/Fondo-seg-3_0024.png",
 	GAMEDATA_DIR "images/Fondo-seg-3_0025.png",
-	GAMEDATA_DIR "images/Fondo-seg-3_0026.png",
 	GAMEDATA_DIR "images/Fondo-seg-4_0001.png",
 	GAMEDATA_DIR "images/Fondo-seg-4_0002.png",
 	GAMEDATA_DIR "images/Fondo-seg-4_0003.png",
@@ -375,6 +422,17 @@ const char *images_names[NUM_IMAGES] = {
 	GAMEDATA_DIR "images/Fondo-seg-4_0035.png",
 	GAMEDATA_DIR "images/Fondo-seg-4_0036.png",
 	GAMEDATA_DIR "images/Fondo-seg-4_0037.png",
+	GAMEDATA_DIR "images/Fondo-seg-4_0038.png",
+	GAMEDATA_DIR "images/Fondo-seg-4_0039.png",
+	GAMEDATA_DIR "images/Fondo-seg-4_0040.png",
+	GAMEDATA_DIR "images/Fondo-seg-4_0041.png",
+	GAMEDATA_DIR "images/Fondo-seg-4_0042.png",
+	GAMEDATA_DIR "images/Fondo-seg-4_0043.png",
+	GAMEDATA_DIR "images/Fondo-seg-4_0044.png",
+	GAMEDATA_DIR "images/Fondo-seg-4_0045.png",
+	GAMEDATA_DIR "images/Fondo-seg-4_0046.png",
+	GAMEDATA_DIR "images/Fondo-seg-4_0047.png",
+	GAMEDATA_DIR "images/Fondo-seg-4_0048.png",
 	GAMEDATA_DIR "images/Fondo-seg-5_0001.png",
 	GAMEDATA_DIR "images/Fondo-seg-5_0002.png",
 	GAMEDATA_DIR "images/Fondo-seg-5_0003.png",
@@ -411,26 +469,66 @@ const char *images_names[NUM_IMAGES] = {
 	GAMEDATA_DIR "images/Fondo-seg-5_0034.png",
 	GAMEDATA_DIR "images/Fondo-seg-5_0035.png",
 	GAMEDATA_DIR "images/Fondo-seg-5_0036.png",
-	GAMEDATA_DIR "images/Fondo-seg-5_0037.png"
+	GAMEDATA_DIR "images/Fondo-seg-5_0037.png",
+	GAMEDATA_DIR "images/Fondo-seg-5_0038.png",
+	GAMEDATA_DIR "images/Fondo-seg-5_0039.png",
+	GAMEDATA_DIR "images/Fondo-seg-5_0040.png",
+	GAMEDATA_DIR "images/Fondo-seg-5_0041.png",
+	GAMEDATA_DIR "images/Fondo-seg-5_0042.png",
+	GAMEDATA_DIR "images/Fondo-seg-5_0043.png",
+	GAMEDATA_DIR "images/Fondo-seg-5_0044.png",
+	GAMEDATA_DIR "images/Fondo-seg-5_0045.png",
+	GAMEDATA_DIR "images/Fondo-seg-5_0046.png",
+	GAMEDATA_DIR "images/Fondo-seg-5_0047.png",
+	GAMEDATA_DIR "images/Fondo-seg-5_0048.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0001.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0002.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0003.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0004.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0005.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0006.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0007.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0008.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0009.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0010.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0011.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0012.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0013.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0014.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0015.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0016.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0017.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0018.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0019.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0020.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0021.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0022.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0023.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0024.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0025.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0026.png",
+	GAMEDATA_DIR "images/Fondo-seg-6_0027.png"
 };
 
 /* Los automátas */
-static int fondo_inicio [7] = {
+static const int fondo_inicio [7] = {
 	-1,
 	IMG_SEG1_1,
 	IMG_SEG2_1,
 	IMG_SEG3_1,
 	IMG_SEG4_1,
-	IMG_SEG5_1
+	IMG_SEG5_1,
+	IMG_SEG6_1
 };
 
-static int fondo_topframes [7] = {
+static const int fondo_topframes [7] = {
 	-1,
 	47,
-	25,
-	25,
-	36,
-	36
+	24,
+	24,
+	47,
+	47,
+	26
 };
 
 /* Codigos de salida */
@@ -438,6 +536,14 @@ enum {
 	GAME_NONE = 0, /* No usado */
 	GAME_CONTINUE,
 	GAME_QUIT
+};
+
+static const int mine_holder [5][31] = {
+	{1, 1, 4, 2, 1, 5, 3, 1, 1, 4, 2, 5, 3, 1, 1, 1, 4, 2, 4, 2, 1, 1, 5, 3, 5, 3, 1, 1, 6, -1},
+	{1, 1, 5, 3, 1, 4, 2, 5, 3, 1, 4, 2, 1, 1, 1, 4, 2, 1, 5, 3, 4, 2, 1, 1, 5, 3, 1, 1, 6, -1},
+	{1, 1, 1, 5, 3, 1, 1, 1, 4, 2, 1, 4, 2, 1, 5, 3, 4, 2, 1, 5, 3, 1, 4, 2, 5, 3, 1, 1, 6, -1},
+	{1, 1, 5, 3, 1, 4, 2, 1, 1, 4, 2, 1, 5, 3, 1, 4, 2, 5, 3, 5, 3, 1, 1, 4, 2, 4, 2, 1, 1, 6, -1},
+	{1, 1, 1, 5, 3, 4, 2, 1, 4, 2, 1, 1, 5, 3, 1, 5, 3, 4, 2, 1, 5, 3, 1, 1, 4, 2, 1, 1, 6, -1}
 };
 
 /* Estructuras */
@@ -451,12 +557,18 @@ SDL_Window * window;
 SDL_Surface *screen;
 SDL_Surface * images [NUM_IMAGES];
 int fondo_frame = 0;
-int fondo_seg = 1;
+int last_safe_seg = 0;
+int current_seg = 0;
+int mine_array [31];
 
 int main (int argc, char *argv[]) {
-
+	int seg;
+	
 	setup ();
-
+	seg = RANDOM(5);
+	printf ("Eligiendo mina: %i\n", seg);
+	memcpy (mine_array, mine_holder[seg], sizeof (mine_array));
+	
 	do {
 		if (game_loop () == GAME_QUIT) break;
 	} while (1 == 0);
@@ -486,11 +598,14 @@ int game_loop (void) {
 			}
 		}
 		
-		SDL_BlitSurface (images[fondo_inicio[fondo_seg] + fondo_frame], NULL, screen, NULL);
+		SDL_BlitSurface (images[fondo_inicio[mine_array[current_seg]] + fondo_frame], NULL, screen, NULL);
 		
 		fondo_frame++;
-		if (fondo_frame > fondo_topframes[fondo_seg]) {
+		if (fondo_frame > fondo_topframes[mine_array[current_seg]]) {
 			fondo_frame = 0;
+			current_seg++;
+			printf ("Entrando al segmento %i, Bloque no %i\n", current_seg, mine_array[current_seg]);
+			if (mine_array[current_seg] == -1) done = GAME_CONTINUE;
 		}
 		
 		SDL_UpdateWindowSurface (window);

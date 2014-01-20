@@ -73,7 +73,6 @@ nobase_dist_gamedata_DATA = images/Fondo-seg-1_0001.png \
 	images/Fondo-seg-2_0023.png \
 	images/Fondo-seg-2_0024.png \
 	images/Fondo-seg-2_0025.png \
-	images/Fondo-seg-2_0026.png \
 	images/Fondo-seg-3_0001.png \
 	images/Fondo-seg-3_0002.png \
 	images/Fondo-seg-3_0003.png \
@@ -99,7 +98,6 @@ nobase_dist_gamedata_DATA = images/Fondo-seg-1_0001.png \
 	images/Fondo-seg-3_0023.png \
 	images/Fondo-seg-3_0024.png \
 	images/Fondo-seg-3_0025.png \
-	images/Fondo-seg-3_0026.png \
 	images/Fondo-seg-4_0001.png \
 	images/Fondo-seg-4_0002.png \
 	images/Fondo-seg-4_0003.png \
@@ -137,6 +135,17 @@ nobase_dist_gamedata_DATA = images/Fondo-seg-1_0001.png \
 	images/Fondo-seg-4_0035.png \
 	images/Fondo-seg-4_0036.png \
 	images/Fondo-seg-4_0037.png \
+	images/Fondo-seg-4_0038.png \
+	images/Fondo-seg-4_0039.png \
+	images/Fondo-seg-4_0040.png \
+	images/Fondo-seg-4_0041.png \
+	images/Fondo-seg-4_0042.png \
+	images/Fondo-seg-4_0043.png \
+	images/Fondo-seg-4_0044.png \
+	images/Fondo-seg-4_0045.png \
+	images/Fondo-seg-4_0046.png \
+	images/Fondo-seg-4_0047.png \
+	images/Fondo-seg-4_0048.png \
 	images/Fondo-seg-5_0001.png \
 	images/Fondo-seg-5_0002.png \
 	images/Fondo-seg-5_0003.png \
@@ -173,5 +182,43 @@ nobase_dist_gamedata_DATA = images/Fondo-seg-1_0001.png \
 	images/Fondo-seg-5_0034.png \
 	images/Fondo-seg-5_0035.png \
 	images/Fondo-seg-5_0036.png \
-	images/Fondo-seg-5_0037.png
+	images/Fondo-seg-5_0037.png \
+	images/Fondo-seg-5_0038.png \
+	images/Fondo-seg-5_0039.png \
+	images/Fondo-seg-5_0040.png \
+	images/Fondo-seg-5_0041.png \
+	images/Fondo-seg-5_0042.png \
+	images/Fondo-seg-5_0043.png \
+	images/Fondo-seg-5_0044.png \
+	images/Fondo-seg-5_0045.png \
+	images/Fondo-seg-5_0046.png \
+	images/Fondo-seg-5_0047.png \
+	images/Fondo-seg-5_0048.png \
+	images/Fondo-seg-6_0001.png \
+	images/Fondo-seg-6_0002.png \
+	images/Fondo-seg-6_0003.png \
+	images/Fondo-seg-6_0004.png \
+	images/Fondo-seg-6_0005.png \
+	images/Fondo-seg-6_0006.png \
+	images/Fondo-seg-6_0007.png \
+	images/Fondo-seg-6_0008.png \
+	images/Fondo-seg-6_0009.png \
+	images/Fondo-seg-6_0010.png \
+	images/Fondo-seg-6_0011.png \
+	images/Fondo-seg-6_0012.png \
+	images/Fondo-seg-6_0013.png \
+	images/Fondo-seg-6_0014.png \
+	images/Fondo-seg-6_0015.png \
+	images/Fondo-seg-6_0016.png \
+	images/Fondo-seg-6_0017.png \
+	images/Fondo-seg-6_0018.png \
+	images/Fondo-seg-6_0019.png \
+	images/Fondo-seg-6_0020.png \
+	images/Fondo-seg-6_0021.png \
+	images/Fondo-seg-6_0022.png \
+	images/Fondo-seg-6_0023.png \
+	images/Fondo-seg-6_0024.png \
+	images/Fondo-seg-6_0025.png \
+	images/Fondo-seg-6_0026.png \
+	images/Fondo-seg-6_0027.png
 
