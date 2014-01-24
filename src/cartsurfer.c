@@ -42,7 +42,7 @@
 #include "config.h"
 #endif
 
-#define FPS (1000/18)
+#define FPS (1000/24)
 
 #define RANDOM(x) ((int) (x ## .0 * rand () / (RAND_MAX + 1.0)))
 
@@ -283,6 +283,115 @@ enum {
 	IMG_SEG6_26,
 	IMG_SEG6_27,
 	
+	IMG_PENGUIN_1_1,
+	IMG_PENGUIN_1_2,
+	IMG_PENGUIN_1_3,
+	
+	IMG_PENGUIN_2_1,
+	IMG_PENGUIN_2_2,
+	IMG_PENGUIN_2_3,
+	IMG_PENGUIN_2_4,
+	IMG_PENGUIN_2_5,
+	IMG_PENGUIN_2_6,
+	IMG_PENGUIN_2_7,
+	IMG_PENGUIN_2_8,
+	IMG_PENGUIN_2_9,
+	IMG_PENGUIN_2_10,
+	IMG_PENGUIN_2_11,
+	IMG_PENGUIN_2_12,
+	IMG_PENGUIN_2_13,
+	IMG_PENGUIN_2_14,
+	IMG_PENGUIN_2_15,
+	IMG_PENGUIN_2_16,
+	IMG_PENGUIN_2_17,
+	IMG_PENGUIN_2_18,
+	IMG_PENGUIN_2_19,
+	IMG_PENGUIN_2_20,
+	IMG_PENGUIN_2_21,
+	IMG_PENGUIN_2_22,
+	IMG_PENGUIN_2_23,
+	IMG_PENGUIN_2_24,
+	IMG_PENGUIN_2_25,
+	IMG_PENGUIN_2_26,
+	IMG_PENGUIN_2_27,
+	IMG_PENGUIN_2_28,
+	IMG_PENGUIN_2_29,
+	IMG_PENGUIN_2_30,
+	IMG_PENGUIN_2_31,
+	IMG_PENGUIN_2_32,
+	IMG_PENGUIN_2_33,
+	IMG_PENGUIN_2_34,
+	IMG_PENGUIN_2_35,
+	IMG_PENGUIN_2_36,
+	IMG_PENGUIN_2_37,
+	IMG_PENGUIN_2_38,
+	IMG_PENGUIN_2_39,
+	IMG_PENGUIN_2_40,
+	
+	IMG_PENGUIN_3_1,
+	IMG_PENGUIN_3_2,
+	IMG_PENGUIN_3_3,
+	IMG_PENGUIN_3_4,
+	IMG_PENGUIN_3_5,
+	IMG_PENGUIN_3_6,
+	IMG_PENGUIN_3_7,
+	IMG_PENGUIN_3_8,
+	IMG_PENGUIN_3_9,
+	IMG_PENGUIN_3_10,
+	IMG_PENGUIN_3_11,
+	IMG_PENGUIN_3_12,
+	IMG_PENGUIN_3_13,
+	IMG_PENGUIN_3_14,
+	IMG_PENGUIN_3_15,
+	IMG_PENGUIN_3_16,
+	IMG_PENGUIN_3_17,
+	IMG_PENGUIN_3_18,
+	IMG_PENGUIN_3_19,
+	IMG_PENGUIN_3_20,
+	IMG_PENGUIN_3_21,
+	IMG_PENGUIN_3_22,
+	IMG_PENGUIN_3_23,
+	IMG_PENGUIN_3_24,
+	IMG_PENGUIN_3_25,
+	IMG_PENGUIN_3_26,
+	IMG_PENGUIN_3_27,
+	IMG_PENGUIN_3_28,
+	IMG_PENGUIN_3_29,
+	IMG_PENGUIN_3_30,
+	IMG_PENGUIN_3_31,
+	IMG_PENGUIN_3_32,
+	IMG_PENGUIN_3_33,
+	IMG_PENGUIN_3_34,
+	IMG_PENGUIN_3_35,
+	IMG_PENGUIN_3_36,
+	IMG_PENGUIN_3_37,
+	IMG_PENGUIN_3_38,
+	IMG_PENGUIN_3_39,
+	IMG_PENGUIN_3_40,
+	
+	IMG_PENGUIN_CRASH_1,
+	IMG_PENGUIN_CRASH_2,
+	IMG_PENGUIN_CRASH_3,
+	IMG_PENGUIN_CRASH_4,
+	IMG_PENGUIN_CRASH_5,
+	IMG_PENGUIN_CRASH_6,
+	IMG_PENGUIN_CRASH_7,
+	IMG_PENGUIN_CRASH_8,
+	IMG_PENGUIN_CRASH_9,
+	IMG_PENGUIN_CRASH_10,
+	IMG_PENGUIN_CRASH_11,
+	IMG_PENGUIN_CRASH_12,
+	IMG_PENGUIN_CRASH_13,
+	IMG_PENGUIN_CRASH_14,
+	IMG_PENGUIN_CRASH_15,
+	IMG_PENGUIN_CRASH_16,
+	IMG_PENGUIN_CRASH_17,
+	IMG_PENGUIN_CRASH_18,
+	IMG_PENGUIN_CRASH_19,
+	IMG_PENGUIN_CRASH_20,
+	IMG_PENGUIN_CRASH_21,
+	IMG_PENGUIN_CRASH_22,
+	
 	NUM_IMAGES
 };
 
@@ -507,7 +616,113 @@ const char *images_names[NUM_IMAGES] = {
 	GAMEDATA_DIR "images/Fondo-seg-6_0024.png",
 	GAMEDATA_DIR "images/Fondo-seg-6_0025.png",
 	GAMEDATA_DIR "images/Fondo-seg-6_0026.png",
-	GAMEDATA_DIR "images/Fondo-seg-6_0027.png"
+	GAMEDATA_DIR "images/Fondo-seg-6_0027.png",
+	
+	GAMEDATA_DIR "images/pinguino_1_0001.png",
+	GAMEDATA_DIR "images/pinguino_1_0002.png",
+	GAMEDATA_DIR "images/pinguino_1_0003.png",
+	GAMEDATA_DIR "images/pinguino_2_0001.png",
+	GAMEDATA_DIR "images/pinguino_2_0002.png",
+	GAMEDATA_DIR "images/pinguino_2_0003.png",
+	GAMEDATA_DIR "images/pinguino_2_0004.png",
+	GAMEDATA_DIR "images/pinguino_2_0005.png",
+	GAMEDATA_DIR "images/pinguino_2_0006.png",
+	GAMEDATA_DIR "images/pinguino_2_0007.png",
+	GAMEDATA_DIR "images/pinguino_2_0008.png",
+	GAMEDATA_DIR "images/pinguino_2_0009.png",
+	GAMEDATA_DIR "images/pinguino_2_0010.png",
+	GAMEDATA_DIR "images/pinguino_2_0011.png",
+	GAMEDATA_DIR "images/pinguino_2_0012.png",
+	GAMEDATA_DIR "images/pinguino_2_0013.png",
+	GAMEDATA_DIR "images/pinguino_2_0014.png",
+	GAMEDATA_DIR "images/pinguino_2_0015.png",
+	GAMEDATA_DIR "images/pinguino_2_0016.png",
+	GAMEDATA_DIR "images/pinguino_2_0017.png",
+	GAMEDATA_DIR "images/pinguino_2_0018.png",
+	GAMEDATA_DIR "images/pinguino_2_0019.png",
+	GAMEDATA_DIR "images/pinguino_2_0020.png",
+	GAMEDATA_DIR "images/pinguino_2_0021.png",
+	GAMEDATA_DIR "images/pinguino_2_0022.png",
+	GAMEDATA_DIR "images/pinguino_2_0023.png",
+	GAMEDATA_DIR "images/pinguino_2_0024.png",
+	GAMEDATA_DIR "images/pinguino_2_0025.png",
+	GAMEDATA_DIR "images/pinguino_2_0026.png",
+	GAMEDATA_DIR "images/pinguino_2_0027.png",
+	GAMEDATA_DIR "images/pinguino_2_0028.png",
+	GAMEDATA_DIR "images/pinguino_2_0029.png",
+	GAMEDATA_DIR "images/pinguino_2_0030.png",
+	GAMEDATA_DIR "images/pinguino_2_0031.png",
+	GAMEDATA_DIR "images/pinguino_2_0032.png",
+	GAMEDATA_DIR "images/pinguino_2_0033.png",
+	GAMEDATA_DIR "images/pinguino_2_0034.png",
+	GAMEDATA_DIR "images/pinguino_2_0035.png",
+	GAMEDATA_DIR "images/pinguino_2_0036.png",
+	GAMEDATA_DIR "images/pinguino_2_0037.png",
+	GAMEDATA_DIR "images/pinguino_2_0038.png",
+	GAMEDATA_DIR "images/pinguino_2_0039.png",
+	GAMEDATA_DIR "images/pinguino_2_0040.png",
+	GAMEDATA_DIR "images/pinguino_3_0001.png",
+	GAMEDATA_DIR "images/pinguino_3_0002.png",
+	GAMEDATA_DIR "images/pinguino_3_0003.png",
+	GAMEDATA_DIR "images/pinguino_3_0004.png",
+	GAMEDATA_DIR "images/pinguino_3_0005.png",
+	GAMEDATA_DIR "images/pinguino_3_0006.png",
+	GAMEDATA_DIR "images/pinguino_3_0007.png",
+	GAMEDATA_DIR "images/pinguino_3_0008.png",
+	GAMEDATA_DIR "images/pinguino_3_0009.png",
+	GAMEDATA_DIR "images/pinguino_3_0010.png",
+	GAMEDATA_DIR "images/pinguino_3_0011.png",
+	GAMEDATA_DIR "images/pinguino_3_0012.png",
+	GAMEDATA_DIR "images/pinguino_3_0013.png",
+	GAMEDATA_DIR "images/pinguino_3_0014.png",
+	GAMEDATA_DIR "images/pinguino_3_0015.png",
+	GAMEDATA_DIR "images/pinguino_3_0016.png",
+	GAMEDATA_DIR "images/pinguino_3_0017.png",
+	GAMEDATA_DIR "images/pinguino_3_0018.png",
+	GAMEDATA_DIR "images/pinguino_3_0019.png",
+	GAMEDATA_DIR "images/pinguino_3_0020.png",
+	GAMEDATA_DIR "images/pinguino_3_0021.png",
+	GAMEDATA_DIR "images/pinguino_3_0022.png",
+	GAMEDATA_DIR "images/pinguino_3_0023.png",
+	GAMEDATA_DIR "images/pinguino_3_0024.png",
+	GAMEDATA_DIR "images/pinguino_3_0025.png",
+	GAMEDATA_DIR "images/pinguino_3_0026.png",
+	GAMEDATA_DIR "images/pinguino_3_0027.png",
+	GAMEDATA_DIR "images/pinguino_3_0028.png",
+	GAMEDATA_DIR "images/pinguino_3_0029.png",
+	GAMEDATA_DIR "images/pinguino_3_0030.png",
+	GAMEDATA_DIR "images/pinguino_3_0031.png",
+	GAMEDATA_DIR "images/pinguino_3_0032.png",
+	GAMEDATA_DIR "images/pinguino_3_0033.png",
+	GAMEDATA_DIR "images/pinguino_3_0034.png",
+	GAMEDATA_DIR "images/pinguino_3_0035.png",
+	GAMEDATA_DIR "images/pinguino_3_0036.png",
+	GAMEDATA_DIR "images/pinguino_3_0037.png",
+	GAMEDATA_DIR "images/pinguino_3_0038.png",
+	GAMEDATA_DIR "images/pinguino_3_0039.png",
+	GAMEDATA_DIR "images/pinguino_3_0040.png",
+	GAMEDATA_DIR "images/pinguino_21_0001.png",
+	GAMEDATA_DIR "images/pinguino_21_0002.png",
+	GAMEDATA_DIR "images/pinguino_21_0003.png",
+	GAMEDATA_DIR "images/pinguino_21_0004.png",
+	GAMEDATA_DIR "images/pinguino_21_0005.png",
+	GAMEDATA_DIR "images/pinguino_21_0006.png",
+	GAMEDATA_DIR "images/pinguino_21_0007.png",
+	GAMEDATA_DIR "images/pinguino_21_0008.png",
+	GAMEDATA_DIR "images/pinguino_21_0009.png",
+	GAMEDATA_DIR "images/pinguino_21_0010.png",
+	GAMEDATA_DIR "images/pinguino_21_0011.png",
+	GAMEDATA_DIR "images/pinguino_21_0012.png",
+	GAMEDATA_DIR "images/pinguino_21_0013.png",
+	GAMEDATA_DIR "images/pinguino_21_0014.png",
+	GAMEDATA_DIR "images/pinguino_21_0015.png",
+	GAMEDATA_DIR "images/pinguino_21_0016.png",
+	GAMEDATA_DIR "images/pinguino_21_0017.png",
+	GAMEDATA_DIR "images/pinguino_21_0018.png",
+	GAMEDATA_DIR "images/pinguino_21_0019.png",
+	GAMEDATA_DIR "images/pinguino_21_0020.png",
+	GAMEDATA_DIR "images/pinguino_21_0021.png",
+	GAMEDATA_DIR "images/pinguino_21_0022.png"
 };
 
 /* Los automátas */
@@ -529,6 +744,55 @@ static const int fondo_topframes [7] = {
 	47,
 	47,
 	26
+};
+
+static const int penguin_frames[24][100] = {
+	/* Frame 1 */ {IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_2, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_1, IMG_PENGUIN_1_3, IMG_PENGUIN_1_1, -1, 0},
+	/* Frame 2 */ {IMG_PENGUIN_2_1, IMG_PENGUIN_2_2, IMG_PENGUIN_2_3, IMG_PENGUIN_2_4, IMG_PENGUIN_2_5, IMG_PENGUIN_2_6, IMG_PENGUIN_2_7, IMG_PENGUIN_2_8, IMG_PENGUIN_2_9, IMG_PENGUIN_2_10, IMG_PENGUIN_2_11, IMG_PENGUIN_2_12, IMG_PENGUIN_2_13, IMG_PENGUIN_2_14, IMG_PENGUIN_2_15, IMG_PENGUIN_2_16, IMG_PENGUIN_2_17, IMG_PENGUIN_2_18, IMG_PENGUIN_2_19, IMG_PENGUIN_2_20, IMG_PENGUIN_2_21, IMG_PENGUIN_2_22, IMG_PENGUIN_2_23, IMG_PENGUIN_2_24, IMG_PENGUIN_2_25, IMG_PENGUIN_2_26, IMG_PENGUIN_2_27, IMG_PENGUIN_2_28, IMG_PENGUIN_2_29, IMG_PENGUIN_2_30, IMG_PENGUIN_2_31, IMG_PENGUIN_2_32, IMG_PENGUIN_2_33, IMG_PENGUIN_2_34, IMG_PENGUIN_2_35, IMG_PENGUIN_2_36, IMG_PENGUIN_2_37, IMG_PENGUIN_2_38, IMG_PENGUIN_2_39, IMG_PENGUIN_2_40, -1, 21},
+	/* Frame 3 */ {IMG_PENGUIN_2_1, IMG_PENGUIN_2_2, IMG_PENGUIN_2_3, IMG_PENGUIN_2_4, IMG_PENGUIN_2_5, IMG_PENGUIN_2_6, IMG_PENGUIN_2_7, IMG_PENGUIN_2_8, IMG_PENGUIN_2_9, IMG_PENGUIN_2_10, IMG_PENGUIN_2_11, IMG_PENGUIN_2_12, IMG_PENGUIN_2_13, IMG_PENGUIN_2_14, IMG_PENGUIN_2_15, IMG_PENGUIN_2_16, IMG_PENGUIN_2_17, IMG_PENGUIN_2_18, IMG_PENGUIN_2_19, IMG_PENGUIN_2_20, IMG_PENGUIN_2_21, IMG_PENGUIN_2_22, IMG_PENGUIN_2_23, IMG_PENGUIN_2_24, IMG_PENGUIN_2_25, IMG_PENGUIN_2_26, IMG_PENGUIN_2_27, IMG_PENGUIN_2_28, IMG_PENGUIN_2_29, IMG_PENGUIN_2_30, IMG_PENGUIN_2_31, IMG_PENGUIN_2_32, IMG_PENGUIN_2_33, IMG_PENGUIN_2_34, IMG_PENGUIN_2_35, IMG_PENGUIN_2_36, IMG_PENGUIN_2_37, IMG_PENGUIN_2_38, IMG_PENGUIN_2_39, IMG_PENGUIN_2_40, -1, 23},
+	/* Frame 4 */ {0},
+	/* Frame 5 */ {0},
+	/* Frame 6 */ {0},
+	/* Frame 7 */ {0},
+	/* Frame 8 */ {0},
+	/* Frame 9 */ {0},
+	/* Frame 10 */ {0},
+	/* Frame 11 */ {0},
+	/* Frame 12 */ {0},
+	/* Frame 13 */ {0},
+	/* Frame 14 */ {0},
+	/* Frame 15 */ {0},
+	/* Frame 16 */ {0},
+	/* Frame 17 */ {0},
+	/* Frame 18 */ {0},
+	/* Frame 19 */ {0},
+	/* Frame 20 */ {0},
+	/* Frame 21 */ {IMG_PENGUIN_CRASH_1, IMG_PENGUIN_CRASH_2, IMG_PENGUIN_CRASH_3, IMG_PENGUIN_CRASH_4, IMG_PENGUIN_CRASH_5, IMG_PENGUIN_CRASH_6, IMG_PENGUIN_CRASH_7, IMG_PENGUIN_CRASH_8, IMG_PENGUIN_CRASH_9, IMG_PENGUIN_CRASH_10, IMG_PENGUIN_CRASH_11, IMG_PENGUIN_CRASH_12, IMG_PENGUIN_CRASH_13, IMG_PENGUIN_CRASH_14, IMG_PENGUIN_CRASH_15, IMG_PENGUIN_CRASH_16, IMG_PENGUIN_CRASH_17, IMG_PENGUIN_CRASH_18, IMG_PENGUIN_CRASH_19, IMG_PENGUIN_CRASH_20, IMG_PENGUIN_CRASH_21, IMG_PENGUIN_CRASH_22, -1, 0},
+	/* Frame 22 */ {IMG_PENGUIN_CRASH_1, IMG_PENGUIN_CRASH_2, IMG_PENGUIN_CRASH_3, IMG_PENGUIN_CRASH_4, IMG_PENGUIN_CRASH_5, IMG_PENGUIN_CRASH_6, IMG_PENGUIN_CRASH_7, IMG_PENGUIN_CRASH_8, IMG_PENGUIN_CRASH_9, IMG_PENGUIN_CRASH_10, IMG_PENGUIN_CRASH_11, IMG_PENGUIN_CRASH_12, IMG_PENGUIN_CRASH_13, IMG_PENGUIN_CRASH_14, IMG_PENGUIN_CRASH_15, IMG_PENGUIN_CRASH_16, IMG_PENGUIN_CRASH_17, IMG_PENGUIN_CRASH_18, IMG_PENGUIN_CRASH_19, IMG_PENGUIN_CRASH_20, IMG_PENGUIN_CRASH_21, IMG_PENGUIN_CRASH_22, -1, 0},
+	/* Frame 23 */ {IMG_PENGUIN_CRASH_1, IMG_PENGUIN_CRASH_2, IMG_PENGUIN_CRASH_3, IMG_PENGUIN_CRASH_4, IMG_PENGUIN_CRASH_5, IMG_PENGUIN_CRASH_6, IMG_PENGUIN_CRASH_7, IMG_PENGUIN_CRASH_8, IMG_PENGUIN_CRASH_9, IMG_PENGUIN_CRASH_10, IMG_PENGUIN_CRASH_11, IMG_PENGUIN_CRASH_12, IMG_PENGUIN_CRASH_13, IMG_PENGUIN_CRASH_14, IMG_PENGUIN_CRASH_15, IMG_PENGUIN_CRASH_16, IMG_PENGUIN_CRASH_17, IMG_PENGUIN_CRASH_18, IMG_PENGUIN_CRASH_19, IMG_PENGUIN_CRASH_20, IMG_PENGUIN_CRASH_21, IMG_PENGUIN_CRASH_22, -1, 0},
+};
+
+static const int penguin_x[24] = {
+	326
+};
+
+static const int penguin_y[24] = {
+	257
+};
+
+enum {
+	NO_STANCE = 0,
+	STANCE_SURFING,
+	STANCE_WHEELIE,
+	STANCE_JUMPING
+};
+
+enum {
+	NO_MOVE = 0,
+	MOVE_LEAN,
+	MOVE_GRIND,
+	MOVE_SLIDE,
+	MOVE_SPIN
 };
 
 /* Codigos de salida */
@@ -583,6 +847,12 @@ int game_loop (void) {
 	SDL_Keycode key;
 	Uint32 last_time, now_time;
 	SDL_Rect rect;
+	int cart_frame = 0;
+	int penguin_anim = 0;
+	int temp_i;
+	int crashed = 0;
+	int is_corner = 0;
+	int is_trick = 0;
 	
 	SDL_EventState (SDL_MOUSEMOTION, SDL_IGNORE);
 	
@@ -606,6 +876,19 @@ int game_loop (void) {
 			current_seg++;
 			printf ("Entrando al segmento %i, Bloque no %i\n", current_seg, mine_array[current_seg]);
 			if (mine_array[current_seg] == -1) done = GAME_CONTINUE;
+		}
+		
+		rect.x = penguin_x [penguin_anim];
+		rect.y = penguin_y [penguin_anim];
+		temp_i = penguin_frames[penguin_anim][cart_frame];
+		rect.w = images[temp_i]->w;
+		rect.h = images[temp_i]->h;
+		SDL_BlitSurface (images[temp_i], NULL, screen, &rect);
+		
+		cart_frame++;
+		if (penguin_frames[penguin_anim][cart_frame] == -1) {
+			penguin_anim = penguin_frames[penguin_anim][cart_frame + 1];
+			cart_frame = 0;
 		}
 		
 		SDL_UpdateWindowSurface (window);
